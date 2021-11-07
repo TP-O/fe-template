@@ -1,0 +1,44 @@
+#nav li:last-child {
+    color: #287cf9;
+    background-color: #e9ebee;
+}
+
+#wave {
+    position: absolute;
+    z-index: -100;
+}
+
+#wave svg {
+    bottom: 0;
+    position: absolute;
+}
+
+#wave path {
+    opacity: .5;
+    fill: url(#wave-gradient);
+}
+
+#intro button {
+    background-color: #003f8c;
+    border-color: #003f8c;
+}
+
+#technology {
+    color: #2496ee;
+}
+
+#docker-logo {
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    65% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
