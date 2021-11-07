@@ -1,3 +1,7 @@
+#nav {
+    animation: nav-appearance 4s ease-in-out;
+}
+
 #nav li:last-child {
     color: #287cf9;
     background-color: #e9ebee;
@@ -11,11 +15,16 @@
 #wave svg {
     bottom: 0;
     position: absolute;
+    animation: wave-appearance 3s;
 }
 
 #wave path {
     opacity: .5;
     fill: url(#wave-gradient);
+}
+
+#intro__content {
+    animation: intro-appearance 4s ease-in-out;
 }
 
 #intro button {
@@ -27,8 +36,10 @@
     color: #2496ee;
 }
 
-#docker-logo {
-    animation: floating 3s infinite ease-in-out;
+#intro__logo {
+    animation:
+        floating 3s infinite ease-in-out 4s,
+        logo-appearance 4s ease-in-out;
 }
 
 @keyframes floating {
@@ -40,5 +51,88 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes wave-appearance {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes logo-appearance {
+    0% {
+        transform: translate(0, -50%) scale(.4);
+    }
+    50% {
+        transform: translate(0, -50%) scale(1);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes intro-appearance {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes nav-appearance {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 1280px) {
+    @keyframes logo-appearance {
+        0% {
+            transform: translate(-50%, 100%);
+        }
+        50% {
+            transform: translate(-50%, 0);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    @keyframes intro-appearance {
+        0% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes nav-appearance {
+        0% {
+            transform: translateY(-100%);
+        }
+        50% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
 }
