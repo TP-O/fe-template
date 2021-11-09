@@ -1,0 +1,11 @@
+{
+  "*html": [
+    "npm run prettier"
+  ],
+  "*.scss": [
+    "npm run stylelint"
+  ],
+  "*.ts": [
+    "npm run lint"
+  ]
+}

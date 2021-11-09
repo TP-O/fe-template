@@ -1,0 +1,295 @@
+@keyframes flying {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-right-1 {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  50% {
+    transform: translate(50vw, 5vh);
+  }
+
+  100% {
+    transform: translate(110vw, 2vh);
+  }
+}
+
+@keyframes fly-right-2 {
+  0% {
+    transform: translate(-100%, 30vh);
+  }
+
+  50% {
+    transform: translate(50vw, 25vh);
+  }
+
+  100% {
+    transform: translate(110vw, 30vh);
+  }
+}
+
+@keyframes fly-right-3 {
+  0% {
+    transform: translate(-100%, 25vh);
+  }
+
+  50% {
+    transform: translate(50vw, 20vh);
+  }
+
+  100% {
+    transform: translate(110vw, 35vh);
+  }
+}
+
+@keyframes fly-right-4 {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  50% {
+    transform: translate(50vw, 10vh);
+  }
+
+  100% {
+    transform: translate(110vw, -15vh);
+  }
+}
+
+@keyframes fly-right-5 {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  50% {
+    transform: translate(50vw, 5vh);
+  }
+
+  100% {
+    transform: translate(110vw, 2vh);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  65% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave-appearance {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-appearance {
+  0% {
+    transform: translate(0, -50%) scale(0.4);
+  }
+
+  50% {
+    transform: translate(0, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes introduction-appearance {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-appearance {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1280px) {
+  @keyframes fly-right-1 {
+    0% {
+      transform: translate(-100%, 0);
+    }
+
+    25% {
+      transform: translate(25vw, 2vh);
+    }
+
+    50% {
+      transform: translate(50vw, 5vh);
+    }
+
+    75% {
+      transform: translate(75vw, -5vh);
+    }
+
+    100% {
+      transform: translate(110vw, 2vh);
+    }
+  }
+
+  @keyframes fly-right-2 {
+    0% {
+      transform: translate(-100%, 20vh);
+    }
+
+    25% {
+      transform: translate(25vw, 25vh);
+    }
+
+    50% {
+      transform: translate(50vw, 15vh);
+    }
+
+    75% {
+      transform: translate(75vw, 20vh);
+    }
+
+    100% {
+      transform: translate(110vw, 20vh);
+    }
+  }
+
+  @keyframes fly-right-3 {
+    0% {
+      transform: translate(-100%, 25vh);
+    }
+
+    25% {
+      transform: translate(25vw, 20vh);
+    }
+
+    50% {
+      transform: translate(50vw, 20vh);
+    }
+
+    75% {
+      transform: translate(75vw, 25vh);
+    }
+
+    100% {
+      transform: translate(110vw, 35vh);
+    }
+  }
+
+  @keyframes fly-right-4 {
+    0% {
+      transform: translate(-100%, 0);
+    }
+
+    25% {
+      transform: translate(25vw, 0);
+    }
+
+    50% {
+      transform: translate(50vw, 10vh);
+    }
+
+    75% {
+      transform: translate(75vw, -10vh);
+    }
+
+    100% {
+      transform: translate(110vw, -15vh);
+    }
+  }
+
+  @keyframes fly-right-5 {
+    0% {
+      transform: translate(-100%, 0);
+    }
+
+    25% {
+      transform: translate(25vw, 2vh);
+    }
+
+    50% {
+      transform: translate(50vw, 5vh);
+    }
+
+    75% {
+      transform: translate(75vw, -5vh);
+    }
+
+    100% {
+      transform: translate(110vw, 2vh);
+    }
+  }
+
+  @keyframes logo-appearance {
+    0% {
+      transform: translate(-50%, 100%);
+    }
+
+    50% {
+      transform: translate(-50%, 0);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes introduction-appearance {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    50% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes nav-appearance {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    50% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

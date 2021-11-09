@@ -1,0 +1,101 @@
+header {
+  #nav {
+    animation: nav-appearance 4s ease-in-out;
+
+    li:last-child {
+      color: #287cf9;
+      background-color: #e9ebee;
+    }
+  }
+
+  .background {
+    .bird {
+      position: absolute;
+      transform: translate(-100%);
+
+      .bird-animations {
+        background-image: url("../../assets/img/docker/flying-bird.svg");
+        background-size: auto 100%;
+        width: 88px;
+        height: 125px;
+        will-change: background-position;
+        animation: flying 1.25s steps(10) infinite;
+        transform: scale(0.3);
+      }
+
+      &#bird-1 {
+        animation: fly-right-1 8s linear infinite 5s;
+      }
+
+      &#bird-2 {
+        animation: fly-right-2 6s linear infinite;
+      }
+
+      &#bird-3 {
+        animation: fly-right-3 7s linear infinite 10s;
+      }
+
+      &#bird-4 {
+        animation: fly-right-4 6s linear infinite 15s;
+      }
+
+      &#bird-5 {
+        animation: fly-right-5 8s linear infinite 20s;
+      }
+
+      @media (min-width: 1280px) {
+        &#bird-1 {
+          animation-duration: 18s;
+        }
+
+        &#bird-2 {
+          animation-duration: 22s;
+        }
+
+        &#bird-3 {
+          animation-duration: 20s;
+        }
+
+        &#bird-4 {
+          animation-duration: 21s;
+        }
+
+        &#bird-5 {
+          animation-duration: 20s;
+        }
+      }
+    }
+
+    #wave {
+      bottom: 0;
+      position: absolute;
+      animation: wave-appearance 3s;
+
+      path {
+        opacity: 0.5;
+        fill: url("#wave-gradient");
+      }
+    }
+  }
+
+  #introduction {
+    .body {
+      animation: introduction-appearance 4s ease-in-out;
+
+      .title {
+        color: #2496ee;
+      }
+
+      button {
+        background-color: #003f8c;
+        border-color: #003f8c;
+      }
+    }
+
+    .logo {
+      animation:
+        floating 3s infinite ease-in-out 4s,
+        logo-appearance 4s ease-in-out;
+    }
+  }
+}
