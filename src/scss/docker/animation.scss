@@ -140,6 +140,16 @@
   }
 }
 
+@keyframes bubble-floating {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: translateY(-90vh) scale(1.5);
+  }
+}
+
 @media (min-width: 1280px) {
   @keyframes fly-right-1 {
     0% {

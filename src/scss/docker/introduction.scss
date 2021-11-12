@@ -3,8 +3,8 @@ header {
     animation: nav-appearance 4s ease-in-out;
 
     li:last-child {
-      color: #287cf9;
-      background-color: #e9ebee;
+      color: $dark-blue-color;
+      background-color: $gray-white-color;
     }
   }
 
@@ -18,9 +18,9 @@ header {
         background-size: auto 100%;
         width: 88px;
         height: 125px;
-        will-change: background-position;
         animation: flying 1.25s steps(10) infinite;
         transform: scale(0.3);
+        will-change: background-position;
       }
 
       &#bird-1 {
@@ -73,7 +73,7 @@ header {
 
       path {
         opacity: 0.5;
-        fill: url("#wave-gradient");
+        fill: $light-blue-color;
       }
     }
   }
@@ -83,12 +83,12 @@ header {
       animation: introduction-appearance 4s ease-in-out;
 
       .title {
-        color: #2496ee;
+        color: $light-blue-color;
       }
 
       button {
-        background-color: #003f8c;
-        border-color: #003f8c;
+        background-color: $dark-blue-color;
+        border-color: $dark-blue-color;
       }
     }
 

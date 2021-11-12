@@ -6,7 +6,6 @@ export default merge(commonWebpackConfig, {
   mode: "development",
   devtool: "source-map",
   devServer: {
-    static: resolve(__dirname, "../docs"),
     compress: true,
     port: 3000,
     hot: true,
