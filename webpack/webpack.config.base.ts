@@ -4,13 +4,13 @@ import { entryPoints } from "./files";
 import * as Plugins from "./plugins";
 import * as Loaders from "./loaders";
 
-export const commonWebpackConfig: Configuration = {
+export const baseWebpackConfig: Configuration = {
   entry: {
     global: "./src/ts/global.ts",
     ...entryPoints,
   },
   output: {
-    path: resolve(__dirname, "../docs"),
+    path: resolve(__dirname, "../dist"),
     filename: "js/[name].[hash:6].js",
     assetModuleFilename: "assets/[name].[hash:6][ext]",
     clean: true,

@@ -1,8 +1,15 @@
 import { resolve } from "path";
 import { merge } from "webpack-merge";
-import { commonWebpackConfig } from "./webpack.config.common";
+import { baseWebpackConfig } from "./webpack.config.base";
+import WebpackDevServer from "webpack-dev-server";
 
-export default merge(commonWebpackConfig, {
+declare module "webpack" {
+  interface Configuration {
+    devServer?: WebpackDevServer.Configuration;
+  }
+}
+
+export default merge(baseWebpackConfig, {
   mode: "development",
   devtool: "source-map",
   devServer: {

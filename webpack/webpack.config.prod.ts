@@ -1,10 +1,10 @@
 import { merge } from "webpack-merge";
-import { commonWebpackConfig } from "./webpack.config.common";
+import { baseWebpackConfig } from "./webpack.config.base";
 import CssnanoPlugin from "cssnano-webpack-plugin";
 import HtmlMinimizerPlugin from "html-minimizer-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
 
-export default merge(commonWebpackConfig, {
+export default merge(baseWebpackConfig, {
   mode: "production",
   optimization: {
     minimize: true,
